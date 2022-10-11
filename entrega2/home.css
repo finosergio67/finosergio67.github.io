@@ -1,0 +1,174 @@
+/* Cargando */
+.conteiner{
+    position: absolute;
+    background-color: #010810;
+    
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+
+}
+
+.cargando{
+    margin: auto;
+    width: 350px;
+    height: 30px;
+    background-color: #010810;
+    position: relative;
+    
+
+}
+.cargando p {
+    margin: 0;
+    line-height: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+.cargando:before{
+    content: "";
+    position: absolute;
+    background-color: green;
+    width: 0;
+    height: 30px;
+
+    animation: cargando 10s infinite;
+}
+
+@keyframes cargando{
+    90%{
+        width: 100%;
+        opacity: 1;
+    }
+    100% {
+        width: 100%;
+        opacity: 0;
+    }
+}
+.cerrar{
+    transform: translateY(-100%);
+    transition: all 0.3s;
+}
+
+
+nav {
+    background-color: #21252A;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+img.pequeña {
+    width: 50px;
+    height: 50px;
+}
+
+img.muypequeña {
+    width: 20px;
+    height: 20px;
+}
+
+img.mediana {
+    width: 100px;
+    height: 100px;
+}
+
+img.grande {
+    width: 200px;
+    height: 200px;
+}
+
+body {
+    background-color: #010810;
+}
+
+#opcionesprincipales {
+    margin: 3px;
+    color: white;
+}
+
+#primeraparte {
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#buscar {
+    margin: 0px;
+    margin-right: 3px;
+    background-color: white;
+}
+
+#segundaparte {
+    display: flex;
+    justify-content: center;
+}
+
+/* CARRUSELES */
+
+#primercarrusel {
+    margin-top: 30px;
+    background-color: #21252A;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: bold;
+    text-decoration: underline;
+}
+
+#carrusel {
+    display: flex;
+
+}
+
+#Juego {
+    display: flex;
+    flex-direction: column;
+    width: 212px;
+    height: 285px;
+    left: 0px;
+    top: 0px;
+
+}
+
+#informacion {
+
+    width: 104px;
+    height: 27px;
+    left: 0px;
+    top: 0px;
+
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+}
+
+#carrito {
+    display: flex;
+    flex-direction: column;
+    padding-left: 45px;
+}
+
+#juegodestacadito {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    
+}
+
+#Juegodestacado{
+    display: flex;
+    justify-content: center;
+}
+img.grandedestacado {
+    width: 200px;
+    height: 300px;
+}

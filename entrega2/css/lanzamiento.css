@@ -1,0 +1,116 @@
+.portada{
+    display:flex;
+    height: 640px;
+    width: 100%;
+    background-image: url(../img/Lanzamiento.jpg);
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+
+}
+
+.msg h1{
+  color: white;
+    font-size:50px;
+    padding-top: 10%;
+  
+
+}
+
+
+.lanzamiento{
+
+    font-size:medium;
+    color: white;
+   
+}
+
+
+.msg{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+
+
+   
+   
+}
+
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        background-color: #21252A;
+        height: 300px;
+    
+    }
+
+    .redes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .items{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .sup_izquierda{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .sup_derecha{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    ul{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        list-style: none;
+        width: 200px;
+        margin: 10px;
+        
+    }
+
+    li{
+        color: white;
+        width:max-content;
+    }
+
+    .inf_izquierda{
+        width: 25%;
+
+       display: flex;
+        flex-direction: row;
+
+       
+
+    }
+
+    .inf_derecha{
+        width: 25%;
+ 
+  
+
+    }
+
+    .inf_centroder{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+        width: 25%;
+
+    
+        
+    }
+
+    .inf_centroizq{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        width: 25%;
+    }
