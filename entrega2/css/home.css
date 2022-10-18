@@ -1,0 +1,472 @@
+body{
+    font-family: 'Helvetica', sans-serif;
+    color: #ffffff;
+}
+
+div{
+    background-color: #21252A;
+    
+}
+.nav_menu a, label{
+    text-decoration: none;
+    color: #fff;
+}
+#primeraparte{
+    text-decoration: none;
+    color: #fff;
+}
+/* Cargando */
+.conteiner{
+    position: absolute;
+    z-index: 5;
+    background-color: #010810;
+    width: 100%;
+    height: 130%;
+    display: flex;
+}
+
+.cargando{
+    margin: auto;
+    width: 350px;
+    height: 30px;
+    background-color: #010810;
+    position: relative;
+    
+
+}
+
+.cargando p {
+    margin: 0;
+    line-height: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+.cargando:before{
+    content: "";
+    position: absolute;
+    background-color: green;
+    width: 0;
+    height: 30px;
+
+    animation: cargando 10s infinite;
+}
+
+@keyframes cargando{
+    90%{
+        width: 100%;
+        opacity: 1;
+    }
+    100% {
+        width: 100%;
+        opacity: 0;
+    }
+}
+#numerito{
+    color: blue;
+    position: absolute;
+    margin-top: 30%;
+    margin-left: 125px;
+}
+.cerrar{
+    transform: translateY(-100%);
+    transition: all 0.3s;
+}
+
+
+nav {
+    background-color: #21252A;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav_container{
+    display: flex;
+    margin: 100%;
+    margin: 0%;
+    
+    align-items: center;
+    position: relative;
+}
+
+.nav_input, .nav_menu, .titulomenuhamb{
+    display: none;
+}
+
+.nav_menu{
+    background-color: #010810;
+   
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    clip-path: circle(0 at center);
+    transition: clip-path 1s ease-in-out;
+}
+
+.nav_input:checked + .nav_menu{
+    clip-path: circle(100% at center);
+}
+
+img.pequeña {
+    width: 50px;
+    height: 50px;
+}
+
+img.muypequeña {
+    width: 20px;
+    height: 20px;
+}
+
+img.mediana {
+    width: 100px;
+    height: 100px;
+}
+
+img.grande {
+    width: 200px;
+    height: 200px;
+}
+
+body {
+    background-color: #010810;
+}
+
+#opcionesprincipales {
+    width: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+#primeraparte {
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#buscar {
+    margin: 0px;
+    margin-right: 3px;
+    background-color: white;
+}
+
+#segundaparte {
+    display: flex;
+    justify-content: center;
+}
+
+/* CARRUSELES */
+
+#primercarrusel {
+    margin-top: 30px;
+    background-color: #21252A;
+}
+
+.titulo {
+    color: white;
+    text-align: center;
+    font-family: bold;
+    text-decoration: underline;
+}
+
+#carrusel {
+    display: flex;
+
+}
+
+
+
+#informacion {
+
+   
+    height: 27px;
+    left: 0px;
+    top: 0px;
+
+   
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+}
+
+
+
+#juegodestacadito {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    
+}
+
+#Juegodestacado{
+    display: flex;
+    justify-content: center;
+}
+img.grandedestacado {
+    width: 200px;
+    height: 300px;
+}
+
+h4,h2,small,a{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.Carousel{
+    width: auto;
+    margin: 0px;
+    margin-bottom: 15px;
+}
+.Carousel h2{
+    font-size: 26px;
+    line-height: 38px;
+    padding-bottom: 24px;
+    opacity: .9;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+/* imagenes */
+.slick-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 304px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    max-width: 90vw;
+    overflow: hidden;
+}
+.slick-track{
+ position: relative;
+ top: 0;
+ left: 0;
+ display: flex;
+ justify-content: center;
+ transition: .5 ease-in-out;
+}
+
+.slick{
+    position: relative;
+    width: 275px;
+    padding: 0 18px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+}
+
+.slick h4{
+    position: absolute;
+    z-index: 1;
+    font-size: 22px;
+    line-height: 23px;
+    color: #fff;
+    padding: 15px;
+}
+.slick h4 small{
+    font-size: 15px;
+    display: block;
+
+}
+.slick a img{
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
+    transition: .3s ease-in-out;
+}
+.slick a img:hover{
+    opacity: 0.3;
+
+}
+/* botones */
+.slick-arrow{
+    border-radius: 30px;
+    position: absolute;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .15);
+    border: 0;
+    cursor: pointer;
+}
+
+.slick-arrow:focus{
+    outline: 0;
+}
+.slick-arrow svg{
+    width: 12px;
+    height: 100%;
+    color: rgba(0, 0, 0, 7);
+}
+
+.slick-prev{
+    left: 0px;
+}
+.slick-next{
+    right: 0px;
+}
+
+.carrito{
+    border-radius: 30px;
+   /* position: absolute; */
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .15);
+    border: 0;
+    cursor: pointer;
+    margin-left: 40%;
+    margin-top: 5%;
+   
+}
+.infojuego{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    margin-top: 5%;
+}
+
+.novedad h2{
+    font-size: 26px;
+    line-height: 38px;
+    padding-bottom: 24px;
+    opacity: .9;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+
+/* NOVEDADES */
+.novedad{
+    text-align: center;
+    
+}
+
+.contenedornovedad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedornovedad a{
+    position: absolute;
+    background-color: #1149CA;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px 32px;
+    border-radius: 10px;
+    width: 188px;
+    margin-left: 40%;
+    margin-top: 50%;
+    font-family: 'Helvetica', sans-serif;
+    
+}
+/* ------------------------------- Aca comienza el footer ---------------------------------------------*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #21252A;
+    height: 650px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 15px;
+
+}
+
+.items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.sup_izquierda{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+.sup_derecha{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+ul{
+   /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
+    list-style: none;
+    width: 200px;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    width:max-content;
+}
+
+.inf_izquierda{
+    width: 25%;
+
+   display: flex;
+    flex-direction: row;
+
+   
+
+}
+
+.inf_derecha{
+    width: 25%;
+
+
+
+}
+
+.inf_centroder{
+   /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
+
+    width: 25%;
+
+
+    
+}
+
+.inf_centroizq{
+   /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
+    width: 25%;
+}
+

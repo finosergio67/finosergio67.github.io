@@ -5,242 +5,1766 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Jueguix</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="./css/home.css">
 </head>
 
 <body>
+
+      
+        
     <div class="conteiner" id="conteiner">
         <div class="cargando">
-        <p>CARGANDO</p>
+            <p>CARGANDO</p>
+            <label for="" id="numerito"> 0%</label>
         </div>
     </div>
-   
+
     <nav>
         <div id="logo">
+            <a href="index.html">
             <img class="pequeña" src="img/logo.png" alt="img/logo">
-
+        </a>
         </div>
         <div id="log">
             <img class="pequeña" src="img/log.png" alt="">
         </div>
-        <div id="manuhamburguesa">
-            <img class="pequeña" src="img/hamburguesa.jpg" alt="">
+
+
+
+
+
+        <div class="nav_container">
+            <h1 class="titulomenuhamb"> Menu </h1>
+
+            <label for="menu" class="nav_label">
+                <div id="manuhamburguesa">
+                    <img class="pequeña" src="img/hamburguesa.jpg" alt="">
+                </div>
+            </label>
+            
+            
+            
         </div>
+      
 
     </nav>
+
+    <div>
+        <div>
+            <input type="checkbox" id="menu" class="nav_input">
+            
+                <div class="nav_menu">
+                    <a href="#" class="nav_item">Inicio</a>
+                    <a href="#" class="nav_item">Destacados</a>
+                    <a href="#" class="nav_item">Novedades</a>
+                    <a href="Lanzamiento.html" class="nav_item">Proximos lanzamientos</a>
+                    
+                </div>
+        </div>
+    </div>
 
     <div id="opcionesprincipales">
         <div id="primeraparte">
             <label for=""> Destacados</label>
             <label for="">Categorias</label>
-            <label for="">Nuevos lanzamientos</label>
+            <a href="Lanzamiento.html"><label  for="">Nuevos lanzamientos</label></a>
         </div>
         <div id="segundaparte">
             <p id="buscar"> buscar </p>
             <img class="muypequeña" src="img/lupa.png" alt="">
         </div>
+    </div>
 
+    <div class="Carousel">
+        <h2>Recomendados</h2>
+        <div class="slick-list" id="slick-list">
+            <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev"
+                onclick="app.processingButton(event)">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                        d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 278.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+                </svg>
 
+            </button>
+            <div class="slick-track" id="track">
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/1.jpg" alt="Image">
+                            </picture>
 
-        <div id="primercarrusel">
-            <h1>Recomendados</h1>
-            <div id="carrusel">
-                <div id="Juego">
-                    <img class="mediana" src="Imagenes pagina/call of duty.webp" alt="">
-                    <div id="informacion">
-                        <label class="centrar" for=""> Call of Duty</label>
-                        <label class="centrar" for=""> $400 </label>
-                        <img id="carrito" class="muypequeña" src="img/compra.jpg" alt="">
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
                     </div>
-
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/2.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/3.webp" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/4.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/5.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/6.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/7.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/8.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/9.webp" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/10.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/11.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/12.png" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/13.webp" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/14.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/15.webp" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
                 </div>
 
-                <div id="Juego">
-                    <img class="mediana" src="Imagenes pagina/call of duty.webp" alt="">
-                    <div id="informacion">
-                        <label class="centrar" for=""> Call of Duty</label>
-                        <label class="centrar" for=""> $400 </label>
-                        <img id="carrito" class="muypequeña" src="img/compra.jpg" alt="">
-                    </div>
-
-                </div>
-
-                <div id="Juego">
-                    <img class="mediana" src="Imagenes pagina/call of duty.webp" alt="">
-                    <div id="informacion">
-                        <label class="centrar" for=""> Call of Duty</label>
-                        <label class="centrar" for=""> $400 </label>
-                        <img id="carrito" class="muypequeña" src="img/compra.jpg" alt="">
-                    </div>
-
-                </div>
-
-                <div id="Juego">
-                    <img class="mediana" src="Imagenes pagina/call of duty.webp" alt="">
-                    <div id="informacion">
-                        <label class="centrar" for=""> Call of Duty</label>
-                        <label class="centrar" for=""> $400 </label>
-                        <img id="carrito" class="muypequeña" src="img/compra.jpg" alt="">
-                    </div>
-
-                </div>
             </div>
+            <button class="slick-arrow slick-next" id="button-next" data-button="button-next"
+                onclick="app.processingButton(event)">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                        d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                </svg>
+
+            </button>
+        </div>
+    </div>
+
+    <div class="Carousel">
+        <h2>Recomendados</h2>
+        <div class="slick-list" id="slick-list">
+            <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev"
+                onclick="app.processingButton(event)">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                        d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 278.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+                </svg>
+
+            </button>
+            <div class="slick-track" id="track">
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/1.jpg" alt="Image">
+                            </picture>
+
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/2.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/3.webp" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/4.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/5.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/6.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/7.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/8.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/9.webp" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/10.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/11.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/12.png" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/13.webp" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/14.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/15.webp" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <button class="slick-arrow slick-next" id="button-next" data-button="button-next"
+                onclick="app.processingButton(event)">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                        d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                </svg>
+
+            </button>
+        </div>
+    </div>
+
+    <div class="Carousel">
+        <h2>Recomendados</h2>
+        <div class="slick-list" id="slick-list">
+            <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev"
+                onclick="app.processingButton(event)">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                        d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 278.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+                </svg>
+
+            </button>
+            <div class="slick-track" id="track">
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/1.jpg" alt="Image">
+                            </picture>
+
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/2.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/3.webp" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/4.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/5.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/6.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/7.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/8.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/9.webp" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/10.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/11.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/12.png" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/13.webp" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/14.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/15.webp" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <button class="slick-arrow slick-next" id="button-next" data-button="button-next"
+                onclick="app.processingButton(event)">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                        d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                </svg>
+
+            </button>
+        </div>
+    </div>
+
+    <div class="Carousel">
+        <h2>Recomendados</h2>
+        <div class="slick-list" id="slick-list">
+            <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev"
+                onclick="app.processingButton(event)">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                        d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 278.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+                </svg>
+
+            </button>
+            <div class="slick-track" id="track">
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/1.jpg" alt="Image">
+                            </picture>
+
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/2.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/3.webp" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/4.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/5.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/6.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/7.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/8.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/9.webp" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/10.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/11.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/12.png" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/13.webp" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/14.jpg" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4>
+                                <small> Share your mensagge</small>
+                            </h4>
+                            <picture>
+                                <img src="./Imagenes pagina/15.webp" alt="Image">
+                            </picture>
+                            <div class="infojuego">
+                                <label class="" id="informacion" for=""> JUEGUITO 1</label>
+                                <label class="" id="informacion" for=""> $30</label>
+                                <button class="carrito">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <button class="slick-arrow slick-next" id="button-next" data-button="button-next"
+                onclick="app.processingButton(event)">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                        d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                </svg>
+
+            </button>
+        </div>
+    </div>
+
+
+
+    <div class="novedad">
+        <h2>Recomendados</h2>
+
+        <div class="contenedornovedad">
+
+            <img src="./Imagenes pagina/novedades.jpeg" alt="Image">
+
+            <a class="Jugar" href="juego4EnLinea.html"> Jugar </a>
+
+
+
         </div>
 
-        <div id="primercarrusel">
-            <h1>Estrategia</h1>
-            <div id="carrusel">
-                <div id="Juego">
-                    <img class="mediana" src="Imagenes pagina/call of duty.webp" alt="">
-                    <div id="informacion">
-                        <label class="centrar" for=""> Call of Duty</label>
-                        <label class="centrar" for=""> $400 </label>
-                        <img id="carrito" class="muypequeña" src="img/compra.jpg" alt="">
-                    </div>
 
-                </div>
 
-                <div id="Juego">
-                    <img class="mediana" src="Imagenes pagina/call of duty.webp" alt="">
-                    <div id="informacion">
-                        <label class="centrar" for=""> Call of Duty</label>
-                        <label class="centrar" for=""> $400 </label>
-                        <img id="carrito" class="muypequeña" src="img/compra.jpg" alt="">
-                    </div>
 
-                </div>
 
-                <div id="Juego">
-                    <img class="mediana" src="Imagenes pagina/call of duty.webp" alt="">
-                    <div id="informacion">
-                        <label class="centrar" for=""> Call of Duty</label>
-                        <label class="centrar" for=""> $400 </label>
-                        <img id="carrito" class="muypequeña" src="img/compra.jpg" alt="">
-                    </div>
 
-                </div>
-
-                <div id="Juego">
-                    <img class="mediana" src="Imagenes pagina/call of duty.webp" alt="">
-                    <div id="informacion">
-                        <label class="centrar" for=""> Call of Duty</label>
-                        <label class="centrar" for=""> $400 </label>
-                        <img id="carrito" class="muypequeña" src="img/compra.jpg" alt="">
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div id="primercarrusel">
-            <h1>Juego gratis</h1>
-            <div id="carrusel">
-                <div id="Juego">
-                    <img class="mediana" src="Imagenes pagina/call of duty.webp" alt="">
-                    <div id="informacion">
-                        <label class="centrar" for=""> Call of Duty</label>
-                        <label class="centrar" for=""> $400 </label>
-                        <img id="carrito" class="muypequeña" src="img/compra.jpg" alt="">
-                    </div>
-
-                </div>
-
-                <div id="Juego">
-                    <img class="mediana" src="Imagenes pagina/call of duty.webp" alt="">
-                    <div id="informacion">
-                        <label class="centrar" for=""> Call of Duty</label>
-                        <label class="centrar" for=""> $400 </label>
-                        <img id="carrito" class="muypequeña" src="img/compra.jpg" alt="">
-                    </div>
-
-                </div>
-
-                <div id="Juego">
-                    <img class="mediana" src="Imagenes pagina/call of duty.webp" alt="">
-                    <div id="informacion">
-                        <label class="centrar" for=""> Call of Duty</label>
-                        <label class="centrar" for=""> $400 </label>
-                        <img id="carrito" class="muypequeña" src="img/compra.jpg" alt="">
-                    </div>
-
-                </div>
-
-                <div id="Juego">
-                    <img class="mediana" src="Imagenes pagina/call of duty.webp" alt="">
-                    <div id="informacion">
-                        <label class="centrar" for=""> Call of Duty</label>
-                        <label class="centrar" for=""> $400 </label>
-                        <img id="carrito" class="muypequeña" src="img/compra.jpg" alt="">
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div id="primercarrusel">
-            <h1>Aventura</h1>
-            <div id="carrusel">
-                <div id="Juego">
-                    <img class="mediana" src="Imagenes pagina/call of duty.webp" alt="">
-                    <div id="informacion">
-                        <label class="centrar" for=""> Call of Duty</label>
-                        <label class="centrar" for=""> $400 </label>
-                        <img id="carrito" class="muypequeña" src="img/compra.jpg" alt="">
-                    </div>
-
-                </div>
-
-                <div id="Juego">
-                    <img class="mediana" src="Imagenes pagina/call of duty.webp" alt="">
-                    <div id="informacion">
-                        <label class="centrar" for=""> Call of Duty</label>
-                        <label class="centrar" for=""> $400 </label>
-                        <img id="carrito" class="muypequeña" src="img/compra.jpg" alt="">
-                    </div>
-
-                </div>
-
-                <div id="Juego">
-                    <img class="mediana" src="Imagenes pagina/call of duty.webp" alt="">
-                    <div id="informacion">
-                        <label class="centrar" for=""> Call of Duty</label>
-                        <label class="centrar" for=""> $400 </label>
-                        <img id="carrito" class="muypequeña" src="img/compra.jpg" alt="">
-                    </div>
-
-                </div>
-
-                <div id="Juego">
-                    <img class="mediana" src="Imagenes pagina/call of duty.webp" alt="">
-                    <div id="informacion">
-                        <label class="centrar" for=""> Call of Duty</label>
-                        <label class="centrar" for=""> $400 </label>
-                        <img id="carrito" class="muypequeña" src="img/compra.jpg" alt="">
-                    </div>
-
-                </div>
-            </div>
-        </div>
 
     </div>
-    <div id="primercarrusel">
-        <h1>Juego del mes</h1>
-        <div id="Juegodestacado">
 
 
-            <img class="grandedestacado" src="Imagenes pagina/csgo.jpg" alt="">
 
-            <div id="juegodestacadito">
-                <img class="mediana" src="Imagenes pagina/csgo imagen1.jpg" alt="">
-                <img class="mediana" src="Imagenes pagina/csgo imagen2.jpeg">
-                <img class="mediana" src="Imagenes pagina/csgo imagen 3.jpg">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="redes">
+            <div class="sup_izquierda">
+                <img src="img/face.jpg" alt="imagen no encontrada">
+                <img src="img/in.jpg" alt="imagen no encontrada">
+                <img src="img/twitt.jpg" alt="imagen no encontrada">
+            </div>
+            <div class="sup_centro">
+                <img src="img/logo.jpg" alt="imagen no encontrada">
+            </div>
+            <div class="sup_derecha">
+                <img src="img/yout.jpg" alt="imagen no encontrada">
+                <img src="img/G+.jpg" alt="no se encontro la imagen">
+                <img src="img/inst.jpg" alt="no se encontro la imagen">
             </div>
         </div>
 
-    </div>
-    <script src="home.js"></script>
+        <div class="items">
+            <div class="inf_izquierda">
+                <ul>
+                    <li>Contactos</li>
+                    <li>Politicas de privacidad</li>
+                    <li>Preguntas frecuentes</li>
+                    <li>¡Quienes Somos?</li>
+                    <li>Desarrolladores</li>
+                    <li>Trabaja con nosotros</li>
+                    <li>Preguntas frecuentes</li>
+                    <li>Tendencias</li>
+                    <li>Lo nuevo</li>
+                    <li>Sitios de interes</li>
+                </ul>
+            </div>
+            <div class="inf_centroizq">
+                <ul>
+                    <li>Estrategia</li>
+                    <li>Accion primera persona</li>
+                    <li>Aventura</li>
+                    <li>Disparos</li>
+                    <li>Disparos tercera persona</li>
+                    <li>Realidad virtual</li>
+                    <li>Nuevos lanzamientos</li>
+                    <li>Mas vendidos</li>
+                    <li>Gratis</li>
+                    <li>Simuladores</li>
+                </ul>
+            </div>
+            <div class="inf_centroder">
+                <ul>
+                    <li>Estrategia</li>
+                    <li>Accion primera persona</li>
+                    <li>Aventura</li>
+                    <li>Disparos</li>
+                    <li>Disparos tercera persona</li>
+                    <li>Realidad virtual</li>
+                    <li>Nuevos lanzamientos</li>
+                    <li>Mas vendidos</li>
+                    <li>Gratis</li>
+                    <li>Simuladores</li>
+                </ul>
+            </div>
+            <div class="inf_derecha">
+                <ul>
+                    <li>Estrategia</li>
+                    <li>Accion primera persona</li>
+                    <li>Aventura</li>
+                    <li>Disparos</li>
+                    <li>Disparos tercera persona</li>
+                    <li>Realidad virtual</li>
+                    <li>Nuevos lanzamientos</li>
+                    <li>Mas vendidos</li>
+                    <li>Gratis</li>
+                    <li>Simuladores</li>
+                </ul>
+            </div>
 
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script defer src="./js/home.js"></script>
 
 </body>
 

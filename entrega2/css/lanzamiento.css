@@ -1,46 +1,241 @@
-.portada{
-    display:flex;
-    height: 640px;
-    width: 100%;
-    background-image: url(../img/Lanzamiento.jpg);
-    background-repeat: no-repeat;
-    justify-content: flex-end;
-
+nav {
+    background-color: #21252A;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+body{
+    background-color: #010810;
+}
+.nav_container{
+    display: flex;
+    margin: 100%;
+    margin: 0%;
+    
+    align-items: center;
+    position: relative;
+}
+.nav_menu a, label{
+    text-decoration: none;
+    color: #fff;
 }
 
-.msg h1{
+.nav_input, .nav_menu, .titulomenuhamb{
+    display: none;
+}
+
+.nav_menu{
+    background-color: #010810;
+   
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    clip-path: circle(0 at center);
+    transition: clip-path 1s ease-in-out;
+}
+img.pequeña {
+    width: 50px;
+    height: 50px;
+}
+
+img.muypequeña {
+    width: 20px;
+    height: 20px;
+}
+
+img.mediana {
+    width: 100px;
+    height: 100px;
+}
+
+img.grande {
+    width: 200px;
+    height: 200px;
+}
+
+.nav_input:checked + .nav_menu{
+    clip-path: circle(100% at center);
+}
+body{
+    border: 0px;
+    font-style: normal;
+    font:bold;
+    font-size:x-large;
+    color: white;
+    /*font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
+}
+
+
+
+.portada{
+    display:flex;
+    flex-wrap: wrap;
+    height: 700px;
+    width: 100%;
+    background-image: url(../img/Portada.jpg);
+    background-repeat: no-repeat;
+  }
+
+/*.msg h1{
   color: white;
     font-size:50px;
     padding-top: 10%;
   
 
+}*/
+.izq{
+    width: 50%;
+    justify-content: flex-start;
 }
-
 
 .lanzamiento{
-
-    font-size:medium;
-    color: white;
    
+   align-items: flex-end;
 }
 
 
-.msg{
-    display:flex;
+.msg{ 
+    /*display:flex;
     flex-direction: column;
-    align-items:flex-start;
-
-
-   
+    align-items:flex-start;*/
+    color: white;
+    text-align: left;
+    font:bold;
    
 }
 
+h1{
+    padding-top: 50px;
+    font-size:  70px;
+}
+
+.historia{
+    display:flex;
+    flex-wrap: wrap;
+    height: 900px;
+    width: 100%;
+   /* background-image: url(../img/Historia.jpg);*/
+   background-image: url(../img/Historia.jpg);
+    background-repeat: no-repeat;
+    justify-content: center;
+    border-bottom: solid white 5px;
+}
+.container{
+    width: 100%;
+}
+
+.h1centrado{
+    text-align: center;
+}
+
+.a{
+    background-color:#1149CA ; 
+}
+.botonHistoria{
+       /* position: fixed;*/
+       position: relative;
+        background-color:#1149CA ; 
+        top:  300px;
+        left: 75%;
+        border: 1px solid #2e518b; /*anchura, estilo y color borde*/
+        padding: 10px; /*espacio alrededor texto*/
+        color: #ffffff; /*color texto*/
+        text-decoration: none; /*decoración texto*/
+        font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+        border-radius: 50px; /*bordes redondos*/
+}
+
+.personajes{
+    display:flex;
+    flex-wrap: wrap;
+    height: 900px;
+    width: 100%;
+   /* background-image: url(../img/Historia.jpg);*/
+   background-image: url(../img/Personajes.jpg);
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+.botonPersonajes{
+    /* position: fixed;*/
+    position: relative;
+     background-color:#1149CA ; 
+     top:  300px;
+     left: 75%;
+     border: 1px solid #2e518b; /*anchura, estilo y color borde*/
+     padding: 10px; /*espacio alrededor texto*/
+     color: #ffffff; /*color texto*/
+     text-decoration: none; /*decoración texto*/
+     font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+     border-radius: 50px; /*bordes redondos*/
+}
+
+.caracteristicas{
+    display:flex;
+    flex-wrap: wrap;
+    height: 700px;
+    width: 100%;
+   /* background-image: url(../img/Historia.jpg);*/
+   background-image: url(../img/Features.jpg);
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+.botonCaracteristicas{
+    /* position: fixed;*/
+    position: relative;
+     background-color:#1149CA ; 
+     top:  150px;
+     left: 75%;
+     border: 1px solid #2e518b; /*anchura, estilo y color borde*/
+     padding: 10px; /*espacio alrededor texto*/
+     color: #ffffff; /*color texto*/
+     text-decoration: none; /*decoración texto*/
+     font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+     border-radius: 50px; /*bordes redondos*/
+}
+
+
+
+
+.boton {
+    border: 1px solid #2e518b; /*anchura, estilo y color borde*/
+    padding: 10px; /*espacio alrededor texto*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+    border-radius: 50px; /*bordes redondos*/
+    }
+
+
+.historia .caracterisitcas .personajes .portada{
+    border: solid black 5px;
+}
+
+
+.botonVolver{
+    position: fixed;
+     background-color:#1149CA ; 
+     top:  350px;
+     left: 85%;
+     border: 1px solid #2e518b; /*anchura, estilo y color borde*/
+     padding: 10px; /*espacio alrededor texto*/
+     padding-left: 30px;
+     padding-right: 30px;
+     color: #ffffff; /*color texto*/
+     text-decoration: none; /*decoración texto*/
+     font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+     border-radius: 50px; /*bordes redondos*/
+}
+
+/* ------------------------------- Aca comienza el footer ---------------------------------------------*/
 
     footer{
         display: flex;
         flex-direction: column;
         background-color: #21252A;
-        height: 300px;
+        height: 650px;
     
     }
 
@@ -48,6 +243,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        padding-right: 15px;
 
     }
 
@@ -59,27 +255,31 @@
     }
 
     .sup_izquierda{
+        height: 60px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
+       
     }
 
     .sup_derecha{
+        height: 60px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
 
     }
     ul{
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+       /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
         list-style: none;
         width: 200px;
         margin: 10px;
-        
+        padding-bottom: 10px;
     }
 
     li{
+        padding-top: 10px;
+        padding-bottom: 10px;
         color: white;
         width:max-content;
     }
@@ -102,7 +302,7 @@
     }
 
     .inf_centroder{
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+       /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
 
         width: 25%;
 
@@ -111,6 +311,8 @@
     }
 
     .inf_centroizq{
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+       /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
         width: 25%;
     }
+
+    
