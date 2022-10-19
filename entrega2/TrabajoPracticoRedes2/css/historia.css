@@ -1,0 +1,84 @@
+.fotoPagina1{
+    display:flex;
+    flex-wrap: wrap;
+    height: 700px;
+    width: 100%;
+   /* background-image: url(../img/Historia.jpg);*/
+   background-image: url(../img/foto1.jpg);
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+.nav_menu a, label{
+    text-decoration: none;
+    color: #fff;
+}
+nav {
+    background-color: #21252A;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.textoPaginas{
+    display:flex;
+    flex-wrap: wrap;
+  /*  height: 150px;*/
+  height: auto;
+    width: 100%;
+    background-color: black;
+    border-bottom: white solid 5px;
+}
+
+p{
+    padding-left:  10px;
+}
+
+.fotoPagina2{
+    display:flex;
+    flex-wrap: wrap;
+    height: 700px;
+    width: 100%;
+   /* background-image: url(../img/Historia.jpg);*/
+   background-image: url(../img/foto2.jpg);
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+
+
+.fotoPagina3{
+    display:flex;
+    flex-wrap: wrap;
+    height: 700px;
+    width: 100%;
+   /* background-image: url(../img/Historia.jpg);*/
+   background-image: url(../img/foto3.jpg);
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+
+
+.fotoPagina4{
+    display:flex;
+    flex-wrap: wrap;
+    height: 700px;
+    width: 100%;
+   /* background-image: url(../img/Historia.jpg);*/
+   background-image: url(../img/foto4.jpeg);
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+
+
+.fotoPagina5{
+    display:flex;
+    flex-wrap: wrap;
+    height: 700px;
+    width: 100%;
+   /* background-image: url(../img/Historia.jpg);*/
+   background-image: url(../img/Personajes.jpg);
+    background-repeat: no-repeat;
+    justify-content: center;
+}
