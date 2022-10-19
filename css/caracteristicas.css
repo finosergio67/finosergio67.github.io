@@ -1,0 +1,54 @@
+.fotoCaracteristicas2{
+    display:flex;
+    flex-wrap: wrap;
+    height: 700px;
+    width: 100%;
+   /* background-image: url(../img/Historia.jpg);*/
+   background-image: url(../img/Caracteristicas2.jpg);
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+.nav_menu a, label{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav {
+    background-color: #21252A;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.fotoCaracteristicas3{
+    display:flex;
+    flex-wrap: wrap;
+    height: 630px;
+    width: 100%;
+   /* background-image: url(../img/Historia.jpg);*/
+   background-image: url(../img/Caracteristicas3.jpg);
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+.fotoCaracteristicas4{
+    display:flex;
+    flex-wrap: wrap;
+    height: 630px;
+    width: 100%;
+   /* background-image: url(../img/Historia.jpg);*/
+   background-image: url(../img/caracteristicas4.jpg);
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+.fotoCaracteristicas5{
+    display:flex;
+    flex-wrap: wrap;
+    height: 630px;
+    width: 100%;
+   /* background-image: url(../img/Historia.jpg);*/
+   background-image: url(../img/caracteristicas5.jpg);
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
